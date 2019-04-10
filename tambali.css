@@ -1,0 +1,326 @@
+article header, article footer {
+    border: 1px dashed #ccc;
+    padding: 1em;
+    background: rgba(158, 150, 150, 0.596);
+}
+article, footer, header, aside, nav {
+    position: relative;
+}
+header {border-bottom-color: coral;}
+
+/* ------------------------------
+Tutorial de cssdebutant.com (merci de laisser ce commentaire)
+------------------------------ */
+
+#container{width:200px; margin:0 auto;}
+#topbar{width:auto; display:block; height:80px;}
+#navbar{width:auto; display:block; height:20px;}
+
+#main{width:auto; display:block;}
+#column_left{width:400px; margin-right:20px; float:left;}
+#column_right{width:200px; float:left;}
+#footer{width:200px; float:left;}
+#h3{width:200px; float:left;}
+
+
+/*
+div.spacer, permet de faire deux colonne dans #container
+*/
+
+div.spacer{clear:both; height:10px; display:block;}
+#footer{width:auto; display:block; height:24px;}
+
+
+
+
+
+
+Code : CSS
+
+/*l'ordre de déclaration des diverses mises en forme importe peu*/
+
+/*définition de la zone body*/
+body
+{
+width: 90%;
+height: 100%;
+background-color: #000000;
+position: absolute;
+}
+
+/*nouvel élément du HTML5, <header> est logiquement placé en haut*/
+header
+{
+/*dimensions en % pour s'adapter à la taille de l'écran*/
+width: 70%;
+height: 30%;
+background-image:src"rastababy.jpg";
+/*centrage*/
+margin-left: auto;
+margin-right: auto;
+/*position relative à l'élement précedant dans le flux, soit la zone body*/
+position: relative;
+/*son contenu est centré*/
+text-align: center;
+/*la couleur de fond est blanche*/
+background-color: rgb(212, 25, 197);
+/*la bordure est de 1 pixel en trait plein et de couleur blanche*/
+outline: 1px solid rgb(149, 172, 185);
+}
+
+/*lui aussi une nouveauté de HTML5 qui se place logiquement en bas mais ce n'est pas une obligation*/
+footer
+{
+width: 80%;
+height: 10%;
+position: relative;
+/*la position est flottante à gauche. il vient dans le flux après la zone <section> décrite ci-dessous*/
+float: left;
+/*décalé depuis le bord gauche*/
+left: 10%;
+outline: 1px solid #FFFFFF;
+text-align: center;
+}
+
+/*encore une nouveauté amenée par HTML5, on la retrouve deux fois dans notre page en guise de colonnes*/
+section
+{
+width: 40%;
+height: 75%;
+position: relative;
+left: 10%;
+float: left;
+outline: 1px solid #FFFFFF;
+}
+
+
+
+/*formatage d'un titre de type H3*/
+h3
+{
+color: #14758d;
+/*le texte est surligné en blanc*/
+background-color: #FFFFFF;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*définition d'un type de texte personnalisé*/
+
+
+h1
+{
+  font-size: 32px;
+  text-shadow: -1px -1px #0c0, 1px 1px #060, -3px 0 4px #000;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgba(216, 203, 205, 0.192);
+  padding:10px;
+  font-weight:lighter;
+  -moz-box-shadow: 2px 2px 6px rgb(185, 33, 33);  
+  -webkit-box-shadow: 2px 2px 6px rgba(20, 208, 233, 0.671);  
+  box-shadow:2px 2px 6px #888;  
+  text-align:center;
+  display:block;
+  margin:16px;
+  background-image:url(images/rastababy.jpg);  
+}
+
+
+
+h1 {
+    font-size: 30px;
+    margin: 15px 0px 5px 0px;
+    border-bottom: 5px solid rgb(231, 231, 231);
+}
+h3 {
+    font-size: 26px;
+    margin: 15px 0px 5px 0px;
+    border-bottom: 5px solid black;
+}
+
+
+
+
+
+div {
+ 
+    text-align:center;
+   
+ 
+    }
+ 
+
+ 
+div#menu {
+ 
+ 
+    width:490px;
+ 
+    height:500px;
+ 
+    float: left;
+    
+    border-spacing: 3px;
+    border-top: 5px solid rgb(88, 182, 219);
+    border-left: 1px solid rgb(58, 202, 228);
+    border-bottom: 1px solid rgb(69, 210, 235);
+    border-right: 1px solid rgb(78, 210, 243);
+    box-shadow: 0 1px 1px #cccccc;
+    
+    background-color:rgb(168, 210, 238);
+ 
+    }
+    
+div#contenu {
+ 
+    float: left;
+ 
+    width:600px;
+ 
+    height:250px;
+ 
+    margin: auto;
+
+    width: 430px;
+    height: 150px;
+    border-top: 5px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #999;
+    border-right: 3px solid #999;
+    box-shadow: 0 1px 1px #cccccc;
+    margin-left:13px;
+
+
+    background-color:rgb(184, 143, 231);
+ 
+    }
+
+    div#sona {
+ 
+        float: left;
+     
+        width:500px;
+     
+        height:300px;
+     
+        margin: auto;
+    
+        width: 400px;
+        height: 300px;
+        border-top: 5px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-bottom: 3px solid #999;
+        border-right: 3px solid #999;
+        box-shadow: 0 3px 1px #cccccc;
+        margin-left:8px;
+        style='line-height:5px;'
+    
+        background-color:rgb(239, 240, 243);
+     
+        }
+ 
+    div#pied_page {
+ 
+        clear:both;
+     
+        width:900px;
+        background-color: #f3e5f5;
+        border: 1px solid #ab47bc;
+        height: 32px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+        padding: 8px;
+        height:20px;
+        margin: auto;
+        
+        bottom : 3px;
+        height : 30px;
+        margin-top : 30px;
+
+
+        background-color:
+     
+        }
+
+        
+
+
+  
+      
+     
+
+    div.trois li {
+        display: inline-block;
+        border-right: 1px solid;
+        width:80px;
+        font-size: 30px;
+        border-top: 5px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-bottom: 3px solid #999;
+        border-right: 3px solid #999;
+        box-shadow: 0 3px 1px #cccccc;
+        margin-left:13px;
+        background-color: rgb(247, 241, 241);
+    }
+
+    #header {
+        background-image: src"rastababy.jpg"; 
+        background-repeat: none;
+        background-position: [x position of sprite] 50%;
+    }
+
+
+
+    
+
+   
+    
+    ul{
+    
+      list-style-type: none;
+    }
+    
+    li {
+      height: 30px;
+      width: 30%;
+      float: none;
+      margin-right: 50px;
+      border-right: 1px solid #aaa;
+      padding: 0px;
+    }
+    
+    li:last-child {
+      border-right: none;
+    }
+    
+    li a {
+      text-decoration: none;
+      color: #ccc;
+      font: 25px/1 Helvetica, Verdana, sans-serif;
+      text-transform: uppercase;
+      -webkit-transition: all 0.5s ease;
+    }
+    
+  
+  
+
+
+
+* {
+  margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+#navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
